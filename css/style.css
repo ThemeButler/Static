@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);
+body {
+  font-family: 'Cabin', sans-serif;
+}
+.tm-header  {
+  background: url(../images/header.jpg) no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #fff;
+}
+.tm-brand:after {
+    background: url(../images/divider.png) no-repeat center;
+    width: 100%;
+    height: 20px;
+    display: block;
+    content: '';
+    margin: 20px 0;
+}
+.tm-top {
+  border-top: 5px solid #FCC64C;
+}
+
+nav ul.uk-subnav {
+    width: auto;
+    display: inline-block;
+}
+.uk-subnav>* {
+    float: none;
+    display: inline;
+    padding-left: 40px;
+    font-size: 17px;
+}
+.uk-subnav>li:first-of-type {
+  padding-left: 0;
+}
+.uk-subnav>li>a {
+    color: rgba(255,255,255,0.4);
+}
+.uk-subnav>li>a:hover,
+.uk-subnav>.uk-active>a {
+    color: rgba(255,255,255,1);
+}
+.uk-subnav-line>:nth-child(n+2):before{
+  border-left-color: rgba(255,255,255,0.4);
+  margin-right: 40px;
+}
+.tm-main {
+  background: #F1F1F1;
+}
+.tm-newsletter {
+  background: url(../images/newsletter-bg.jpg) no-repeat;
+  background-size: cover;
+}
+.tm-top a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 40px;
+    overflow: hidden;
+}
+.tm-top a:hover {
+    background: #f7f7f7;
+}
+.tm-top figure {
+  margin-right: 20px;
+}
+.tm-footer a {
+  color: #4B4140;
+  border-bottom: 3px solid #FCC64C;
+  padding-bottom: 1px;
+}
+
+/* Mobile Navigation */
+.tm-header nav.tm-open {
+    background-color: red;
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+.tm-header nav.tm-open ul.uk-subnav {
+    width: 100%;
+    float: none;
+    display: table;
+
+}
+.tm-header nav.tm-open li {
+    display: table-cell;
+    width: 50%;
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.tm-header .tm-open li a {
+    display: block;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #fff;
+    border-collapse: collapse;
+}
+.tm-header .tm-open li:before {
+    display: none;
+}
+
+
+
+@media (min-width: 1220px) {
+  .uk-container {
+      max-width: 1350px;
+      padding: 0 35px;
+  }
+}
