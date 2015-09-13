@@ -47,7 +47,7 @@ nav ul.uk-subnav {
   background: #F1F1F1;
 }
 .tm-newsletter {
-  background: url(../images/newsletter-bg.jpg) no-repeat;
+  background: url(../images/newsletter-bg.jpg) no-repeat 50% 50%;
   background-size: cover;
 }
 .tm-top a {
@@ -68,46 +68,192 @@ nav ul.uk-subnav {
   border-bottom: 3px solid #FCC64C;
   padding-bottom: 1px;
 }
-
+.uk-button {
+  color: #fff;
+}
 /* Mobile Navigation */
-.tm-header nav.tm-open {
-    background-color: red;
+.tm-header nav.tm-nav-open {
     position: absolute;
+    top: 200px;
     left: 0;
     height: 100vh;
     width: 100%;
+    background: rgba(72, 55, 46, 0.95);
+    padding-top: 40px;
 }
-.tm-header nav.tm-open ul.uk-subnav {
+.tm-header nav.tm-nav-open ul.uk-subnav {
     width: 100%;
     float: none;
-    display: table;
+    /*display: table;
+    border-collapse: collapse;
+    border-bottom: 1px solid rgba(255,255,255,0.1);*/
 
 }
-.tm-header nav.tm-open li {
-    display: table-cell;
+.tm-header nav.tm-nav-open li {
+    /*display: table-cell;
     width: 50%;
-    float: left;
+    float: left;*/
     display: block;
     margin: 0;
     padding: 0;
+    line-height: 36px;
 }
-.tm-header .tm-open li a {
+.tm-header .tm-nav-open li a {
     display: block;
-    height: 100px;
     text-align: center;
+    /*height: 100px;
     line-height: 100px;
-    border: 1px solid #fff;
-    border-collapse: collapse;
+    border-top: 1px solid rgba(255,255,255,0.1);*/
 }
-.tm-header .tm-open li:before {
+/*.tm-header .tm-nav-open li a:hover,
+.tm-header .tm-nav-open li.uk-active a {
+  background: rgba(255,255,255,0.04);
+}*/
+/*.tm-header .tm-nav-open li:nth-child(odd) a {
+    border-right: 1px solid rgba(255,255,255,0.1);
+}*/
+.tm-header .tm-nav-open li:before {
     display: none;
 }
-
+.uk-button {
+  background: #E27800;
+  border-radius: 2px;
+}
+.uk-button:hover {
+  background: #B76100;
+}
+figure.uk-thumbnail{
+  border-radius: 3px;
+}
+.tm-top figure.uk-thumbnail{
+  border-color: #fff;
+}
+.tm-top .tm-item h2 {
+  margin-top: 5px;
+}
+.tm-top .tm-item:hover figure.uk-thumbnail{
+  border: 1px solid #FCC64C;
+}
+.tm-top .tm-item:hover strong {
+  border-bottom: 3px solid #FCC64C;
+  padding-bottom: 2px;
+}
+figure.uk-thumbnail a {
+  display: block;
+}
+figure.uk-thumbnail a:hover {
+  background: #f7f7f7;
+  text-decoration: none;
+}
+figure.uk-thumbnail figcaption {
+  display: block;
+  height: auto;
+  line-height: 60px;
+  font-size: 16px;
+  padding-top: 5px;
+  font-weight: 600;
+  background: none;
+  border-top: 5px solid #fff;
+}
+.tm-nav-open ul {
+	display: block!important;
+}
+.tm-header .uk-button {
+  color: #fff;
+}
+.tm-footer {
+  background-color: #3E2C2A;
+  border-top: 5px solid #FCC64C;
+}
+.tm-footer div {
+  color: rgba(255,255,255,0.3);
+}
+.tm-footer a {
+  color: #fff;
+}
+@media (min-width: 1220px) {
+  .uk-container {
+      max-width: 1350px;
+      padding: 0 35px;
+  }
+}
+@media (min-width: 320px) {
+  .tm-brand {
+    margin-top: 10px;
+  }
+  .tm-top .tm-item {
+  	text-align: center;
+  }
+  .tm-top .tm-item a {
+  	padding: 20px 20px 40px;
+  }
+  .tm-top .tm-item h3 {
+  	font-size: 16px;
+  	font-weight: bold;
+  }
+  .tm-top .uk-thumbnail {
+  	float: none;
+  	margin: 0 0 20px;
+  }
+  .tm-top h3 {
+  	clear: both;
+  }
+  .tm-main h2 {
+	   margin-top: 20px;
+  }
+  .tm-main .tm-item {
+    margin-bottom: 25px;
+  }
+  .tm-main .tm-item:last-of-type {
+    margin-bottom: 5px;
+  }
+  .tm-newsletter {
+    padding-bottom: 40px;
+  }
+  .tm-newsletter h2 {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  .tm-footer div {
+    text-align: center !important;
+    padding: 0;
+  }
+  .tm-newsletter input {
+    border-radius: 3px 0 0 3px;
+    font-size: 13px;
+  }
+  .tm-newsletter .uk-button {
+    height: 30px;
+    border-radius: 0 3px 3px 0;
+    font-size: 13px;
+  }
+  .tm-main .uk-margin-large-top {
+  	margin-top: 20px!important;
+  }
+  .tm-header {
+	   background: url(../images/mobile-header.jpg) no-repeat;
+  }
+}
+@media (max-width: 1440px) {
+  .uk-width-medium-1-2.uk-push-1-2 {
+	  left: 0;
+	  width: 100%;
+  }
+}
 
 
 @media (min-width: 1220px) {
   .uk-container {
       max-width: 1350px;
       padding: 0 35px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+  .uk-width-medium-1-2.uk-push-1-2 {
+	  left: 0;
+	  width: 100%;
   }
 }
