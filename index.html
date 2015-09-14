@@ -8,56 +8,13 @@
       <title>ThemeButler</title>
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
-      <link rel="stylesheet" href="/css/uikit.min.css">
-      <link rel="stylesheet" href="/css/style.css">
-      <script src="/vendor/jquery.js"></script>
-      <script src="/js/uikit.min.js"></script>
-      <script src="/js/theme.js"></script>
+      <!-- @stylesheet uikit style -->
+      <!-- @javascript jquery uikit theme -->
   </head>
 
   <body>
-
-    <header class="tm-header uk-block">
-      <div class="uk-container uk-container-center uk-text-center">
-        <a class="tm-brand uk-text-center uk-display-block" href="/theme.html"><img src="/images/logo.svg" alt="ThemeButler"></a>
-        <button class="uk-button uk-visible-small uk-margin-bottom" data-uk-toggle="{target:'#js-mobile-nav', cls:'tm-nav-open'}">Show Navigation</button>
-        <nav id="js-mobile-nav">
-          <ul class="uk-hidden-small uk-subnav uk-subnav-line uk-margin-remove">
-            <li class="uk-active"><a href="#">Themes</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-      </nav>
-      </div>
-    </header>
-
-      <div class="tm-top">
-        <div class="uk-grid uk-grid-width-1-1 uk-grid-width-medium-1-2">
-          <div class="tm-item">
-            <a href="#">
-              <div class="uk-width-large-1-1 uk-width-xlarge-1-2">
-                <figure class="uk-thumbnail uk-float-left"><img src="/images/banners/banner-flywheel.png" alt="Flywheel"></figure>
-                <h3 class="uk-margin-top-remove">Sexiest WordPress Hosting By Far</h3>
-                <p>Flywheel is a specialized WordPress hosting company that really gets it. Impressive speed and useful tools, you'll actually use.</p>
-                <p class="uk-margin-remove"><strong>Signup for a free trial!</strong></p>
-              </div>
-            </a>
-          </div>
-          <div class="tm-item uk-hidden-small">
-            <a href="#">
-              <div class="uk-width-medium-1-2 uk-push-1-2">
-                <figure class="uk-thumbnail uk-float-left"><img src="/images/banners/banner-codeable.png" alt="Codeable"></figure>
-                <h3 class="uk-margin-top-remove">WordPress Experts On Demand</h3>
-                <p>Codeable gives you access to a network of professional WordPress developers, as you need them. On time, on budget. Every time.</p>
-                <p class="uk-margin-remove"><strong>Get a free quote!</strong></p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+    <!-- @include _header -->
+    <!-- @include _top -->
 
       <main class="tm-main uk-block-large">
         <div class="uk-container uk-container-center uk-text-center">
@@ -66,8 +23,8 @@
           <div class="uk-grid uk-grid-width-1-1 uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-margin-large-top">
             <div class="tm-item">
               <figure class="uk-thumbnail">
-                <a href="#">
-                  <img src="images/themes/theme-banks.jpg" alt="Banks Theme for WordPress">
+                <a href="theme.html">
+                  <img src="<!-- @path theme-banks.jpg -->" alt="Banks Theme for WordPress">
                   <figcaption class="uk-thumbnail-caption">Banks</figcaption>
                 </a>
               </figure>
@@ -75,7 +32,7 @@
             <div class="tm-item">
               <figure class="uk-thumbnail">
                 <a href="#">
-                  <img src="images/themes/theme-totem.jpg" alt="Totem Theme for WordPress">
+                  <img src="<!-- @path theme-totem.jpg -->" alt="Totem Theme for WordPress">
                   <figcaption class="uk-thumbnail-caption">Totem</figcaption>
                 </a>
               </figure>
@@ -83,7 +40,7 @@
             <div class="tm-item">
               <figure class="uk-thumbnail">
                 <a href="#">
-                  <img src="images/themes/theme-jenkins.jpg" alt="Jenkins Theme for WordPress">
+                  <img src="<!-- @path theme-jenkins.jpg -->" alt="Jenkins Theme for WordPress">
                   <figcaption class="uk-thumbnail-caption">Jenkins</figcaption>
                 </a>
               </figure>
@@ -91,7 +48,7 @@
             <div class="tm-item">
               <figure class="uk-thumbnail">
                 <a href="#">
-                  <img src="images/themes/theme-base.jpg" alt="Base Theme for WordPress">
+                  <img src="<!-- @path theme-base.jpg -->" alt="Base Theme for WordPress">
                   <figcaption class="uk-thumbnail-caption">Base</figcaption>
                 </a>
               </figure>
@@ -100,52 +57,9 @@
         </div>
       </main>
 
-      <div class="tm-bottom uk-block">
-        <div class="uk-container uk-container-center">
-          <div class="uk-grid uk-grid-width-1-2 uk-grid-width-small-1-4 uk-grid-width-medium-1-4 uk-grid-width-large-1-5 uk-grid-width-xlarge-1-6">
-            <div class="tm-item">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner1.jpg" alt="Banner 1"></a>
-            </div>
-            <div class="tm-item">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner2.jpg" alt="Banner 2"></a>
-            </div>
-            <div class="tm-item uk-visible-medium">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner3.jpg" alt="Banner 3"></a>
-            </div>
-            <div class="tm-item uk-visible-medium">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner4.jpg" alt="Banner 4"></a>
-            </div>
-            <div class="tm-item uk-visible-large">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner5.jpg" alt="Banner 5"></a>
-            </div>
-            <div class="tm-item uk-visible-large">
-              <a href="#" class="uk-thumbnail"><img src="/images/banners/banner6.jpg" alt="Banner 6"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tm-newsletter uk-block-large">
-        <div class="uk-container uk-container-center uk-contrast">
-          <h2 class="uk-article-title uk-text-center">Want to be notified when new themes are released?</h2>
-          <p class="uk-h3 uk-text-center">Signup for our free newsletter and you’ll be the first to know!</p>
-          <form class="uk-form" action="#tm-footer" method="post" data-tm-subscribe="">
-            <input class="tm-input uk-margin-remove" type="email" name="tb_email" placeholder="Email address" value="" autocomplete="off">
-            <input type="hidden" name="action" value="themebutler_subscribe">
-            <input type="hidden" name="tb_subscribe" value="1">
-            <button class="uk-button uk-button-secondary uk-button-small tm-field-button" name="tb_verify_coupon">Signup, it’s <strong>free</strong>!</button>
-          </form>
-        </div>
-      </div>
-
-      <footer class="tm-footer uk-block">
-        <div class="uk-container uk-container-center">
-          <div class="uk-grid uk-grid-width-1-1 uk-grid-width-small-1-2 uk-margin-top uk-margin-large-bottom uk-text-muted">
-            <div class="tm-copyright">© ThemeButler 2015. All rights reserved.</div>
-            <div class="tm-credits uk-text-right">Built with <a href="https://getbeans.io" target="_blank" title="Build Smarter with Beans.">Beans</a> and <a href="http://wordpress.org" target="_blank">WordPress</a>.</div>
-          </div>
-        </div>
-      </footer>
+      <!-- @include _bottom -->
+      <!-- @include _newsletter -->
+      <!-- @include _footer -->
 
     </body>
 </html>
