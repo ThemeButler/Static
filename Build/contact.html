@@ -47,7 +47,7 @@
         <li><a href="resources.html">Resources</a></li>
         <li><a href="community.html">Community</a></li>
         <li><a href="advertise.html">Advertise</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class='current'><a class='current' href="contact.html">Contact</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
   </nav>
@@ -81,49 +81,38 @@
 
       <main class="tm-main uk-block-large">
         <div class="uk-container uk-container-center">
-  <div class="tm-single">
-    <div class="uk-grid uk-grid-width-medium-1-2">
-      <figure class="uk-thumbnail">
-        <img src="assets/images/banks-medium.jpg" alt="Banks Theme for WordPress">
-      </figure>
-      <div class="tm-theme-info">
-        <h2 class="uk-margin-remove-top">Banks</h2>
-        <p class="uk-article-lead">Banks is a simple magazine theme for WordPress. Void of sidebars, you know your content is always center stage.</p>
-        <div class="tm-actions uk-margin-bottom">
-          <button name="button" class="uk-button">Download</button>
-          <button name="button" class="uk-button">Demo</button>
-        </div>
-        <ul class="tm-summary uk-subnav uk-margin-large-top uk-margin-left-remove">
-          <li>Version <span><a href="#js-release-notes" data-uk-modal="">1.1.0</a></span></li>
-          <li>Type: <span>Magazine</span></li>
-          <li>Released: <span>July, 2015</span></li>
-          <li>Requirements: <span>WordPress 4.0+</span></li>
-        </ul>
-        <div class="uk-grid uk-grid-width-medium-1-2 uk-margin-large-top">
-          <div class="tm-resources">
-            <h3 class="uk-margin-top-remove">Resources</h3>
-            <ul class="uk-list">
-              <li><a href="#" target="_blank">General Theme Features</a></li>
-              <li><a href="#" target="_blank">General Setup Guide</a></li>
-              <li><a href="#" target="_blank">Beans Tutorials</a></li>
-              <li><a href="#" target="_blank">Beans Documentation</a></li>
-              <li><a href="#" target="_blank">Useful Code Snippets</a></li>
-            </ul>
+  <div class="tm-single" role="main">
+    <h1 class="uk-article-title">Say Hello</h1>
+      <p class="uk-article-lead">Got something you'd like to discuss, or interested in an ad package? Fill out the form below and I'll get back to you asap.</p>
+      <hr class="uk-article-divider">
+      <form method="post" class="uk-form" data-tm-form="">
+        <div class="uk-grid uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-margin-bottom">
+          <div class="uk-margin-bottom">
+            <label class="uk-form-label" for="tbr_first">First name <span>*</span></label>
+            <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="First name" name="tbr_first" autofocus="" tabindex="1">
           </div>
-          <div class="tm-downloads">
-            <h3 class="uk-margin-top-remove">Downloads</h3>
-            <ul class="uk-subnav">
-              <li class="tm-parent-theme"><a href="#">Parent Theme</a></li>
-              <li class="tm-child-theme"><a href="#">Child Theme</a></li>
-              <li class="tm-sketch-source"><a href="#">Sketch Source</a></li>
-            </ul>
+          <div class="uk-margin-bottom">
+            <label class="uk-form-label" for="tbr_last">Last name <span>*</span></label>
+            <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="Last name" name="tbr_last" tabindex="2">
+          </div>
+          <div class="uk-margin-bottom">
+            <label class="uk-form-label" for="tbr_email">Email address <span>*</span></label>
+            <input class="uk-width-1-1 tm-field" type="email" value="" placeholder="you@yourdomain.com" name="tbr_email" tabindex="3">
+          </div>
+          <div class="uk-margin-bottom">
+            <label class="uk-form-label" for="tbr_website">Website (optional)</label>
+            <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="http://yourwebsite.com" name="tbr_website" tabindex="4">
+          </div>
+          <div class="uk-width-1-1 uk-form-row tm-form-actions uk-margin-top">
+            <label class="uk-form-label" for="tbr_message">Message <span>*</span></label>
+            <textarea class="uk-form-large uk-width-1-1 tm-field" cols="13" rows="10" placeholder="Your message" name="tbr_message" tabindex="5"></textarea>
+          </div>
+          <div class="uk-width-1-1 uk-form-row tm-form-actions uk-margin-top">
+            <input type="hidden" name="tbr_contact" value="1">
+            <button class="uk-button uk-button-primary uk-button-large uk-margin-top" name="tbr_submit" tabindex="6">Send</button>
           </div>
         </div>
-        <div class="uk-margin-large-top">
-          <h3 class="uk-margin-top-remove">Support</h3>
-          <p><a href="#" class="uk-button">Ask a question on the Community forum</a> or <a href="#" class="uk-button">Get expert help on <span>Codeable</span></a></p>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
