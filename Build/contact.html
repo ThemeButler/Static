@@ -7,9 +7,11 @@
       <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
       <link rel='stylesheet' href='assets/css/uikit.css'>
+<link rel='stylesheet' href='assets/css/tooltip.css'>
 <link rel='stylesheet' href='assets/css/style.css'>
       <script src='assets/js/jquery.js'></script>
 <script src='assets/js/uikit.js'></script>
+<script src='assets/js/tooltip.js'></script>
 <script src='assets/js/theme.js'></script>
       
         <!-- Hammer reload -->
@@ -81,35 +83,34 @@
 
       <main class="tm-main uk-block-large">
         <div class="uk-container uk-container-center">
-  <div class="tm-single" role="main">
-    <h1 class="uk-article-title">Say Hello</h1>
-      <p class="uk-article-lead">Got something you'd like to discuss, or interested in an ad package? Fill out the form below and I'll get back to you asap.</p>
-      <hr class="uk-article-divider">
+  <div class="tm-single uk-text-center" role="main">
+    <h1>Say Hello</h1>
+      <p class="uk-article-lead uk-margin-large-bottom tm-excerpt">Got something you'd like to discuss? Fill out the form below and I'll get back to you asap. <br>For support, please post your question on the Community Forum or get expert help on Codeable.</p>
       <form method="post" class="uk-form" data-tm-form="">
         <div class="uk-grid uk-grid-width-1-1 uk-grid-width-medium-1-2 uk-margin-bottom">
-          <div class="uk-margin-bottom">
-            <label class="uk-form-label" for="tbr_first">First name <span>*</span></label>
+          <div class="uk-margin-medium-bottom">
+            <label class="uk-form-label uk-hidden" for="tbr_first">First name <span>*</span></label>
             <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="First name" name="tbr_first" autofocus="" tabindex="1">
           </div>
-          <div class="uk-margin-bottom">
-            <label class="uk-form-label" for="tbr_last">Last name <span>*</span></label>
+          <div class="uk-margin-medium-bottom">
+            <label class="uk-form-label uk-hidden" for="tbr_last">Last name <span>*</span></label>
             <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="Last name" name="tbr_last" tabindex="2">
           </div>
-          <div class="uk-margin-bottom">
-            <label class="uk-form-label" for="tbr_email">Email address <span>*</span></label>
-            <input class="uk-width-1-1 tm-field" type="email" value="" placeholder="you@yourdomain.com" name="tbr_email" tabindex="3">
+          <div class="uk-margin-medium-bottom">
+            <label class="uk-form-label uk-hidden" for="tbr_email">Email address <span>*</span></label>
+            <input class="uk-width-1-1 tm-field" type="email" value="" placeholder="Email address" name="tbr_email" tabindex="3">
           </div>
-          <div class="uk-margin-bottom">
-            <label class="uk-form-label" for="tbr_website">Website (optional)</label>
-            <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="http://yourwebsite.com" name="tbr_website" tabindex="4">
+          <div class="uk-margin-medium-bottom">
+            <label class="uk-form-label uk-hidden" for="tbr_website">Website (optional)</label>
+            <input class="uk-width-1-1 tm-field" type="text" value="" placeholder="Your website" name="tbr_website" tabindex="4">
           </div>
-          <div class="uk-width-1-1 uk-form-row tm-form-actions uk-margin-top">
-            <label class="uk-form-label" for="tbr_message">Message <span>*</span></label>
+          <div class="uk-width-1-1 uk-form-row tm-form-actions">
+            <label class="uk-form-label uk-hidden" for="tbr_message">Message <span>*</span></label>
             <textarea class="uk-form-large uk-width-1-1 tm-field" cols="13" rows="10" placeholder="Your message" name="tbr_message" tabindex="5"></textarea>
           </div>
           <div class="uk-width-1-1 uk-form-row tm-form-actions uk-margin-top">
             <input type="hidden" name="tbr_contact" value="1">
-            <button class="uk-button uk-button-primary uk-button-large uk-margin-top" name="tbr_submit" tabindex="6">Send</button>
+            <button class="uk-button uk-button-primary uk-button-large uk-margin-top" name="tbr_submit" tabindex="6">Send it</button>
           </div>
         </div>
       </form>
